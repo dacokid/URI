@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		int n, k, m;
+		Scanner entrada = new Scanner(System.in);
+		do {
+			n = entrada.nextInt();
+			k = entrada.nextInt();
+			m = entrada.nextInt();
+			/*System.out.println("N = " + n);
+			System.out.println("K = " + k);
+			System.out.println("M = " + m);*/
+			if(m>0 & (n>0 & n<20)) {
+				n = n + 1;
+				int pos[] = new int[n];
+				for(int i = 1; i < n; i++) {
+					pos[i] = i;
+					System.out.println("Valores: " + pos[i]);
+				}
+			} else System.exit(0);
+		} while(n!=0 & k!=0 & m!=0);
+	}
+}
